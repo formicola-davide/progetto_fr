@@ -40,7 +40,7 @@ print(clash_data.head(20))
 for i,row in clash_data.iterrows():
     cursor = mydb.cursor()
     #here %S means string values 
-    sql = "INSERT INTO CLASH_ROYALE.Clash_Unit VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+    sql = "INSERT INTO F1.Piloti VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     cursor.execute(sql, tuple(row))
     print("Record inserted")
     # the connection is not auto committed by default, so we must commit to save our changes
