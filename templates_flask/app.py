@@ -17,4 +17,4 @@ app = Flask(__name__)
 def unitList():
     mycursor.execute("SELECT * FROM Piloti")
     myresult = mycursor.fetchall()
-    return render_template('piloti.html', Cognome=myresult)
+    return render_template('piloti.html', tabella_piloti=myresult)
