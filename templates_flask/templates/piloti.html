@@ -13,35 +13,15 @@
     <section class="image-uno">
      <a href="https://www.youtube.com/watch?v=YLFVD8xaD3U"><img src="../static/images/1.jpg" alt="F1" width="400"></a>
     </section>
+    
     {% for pilota in tabella_piloti  %}
-         <p>
-           Cognome: {{pilota[0]}}
-        </p>
+    <section class="boiler">
+        <a href="/Cognome/{{pilota[0]}}">
         <p>
-            Nome: {{pilota [1]}}
+            {{pilota[0]}}
         </p>
-        <p>
-            Nazionalità: {{pilota [2]}}
-        </p>
-        <p>
-            Numero: {{pilota [3]}}
-        </p>
-        <p>
-            Scuderia: {{pilota [4]}}
-        </p>
-        <p>
-            Età: {{pilota [5]}}
-        </p>
-        <p>
-            Pole Position: {{pilota [6]}}
-        </p>
-        <p>
-            Podi: {{pilota [7]}}
-        </p>
-        <p>
-            Vittorie: {{pilota [8]}}
-        </p>
-
+        </a>
+    </section>
     {% endfor %}    
     
      

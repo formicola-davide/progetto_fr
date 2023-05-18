@@ -14,7 +14,14 @@ app = Flask(__name__)
 
 
 @app.route('/Cognome')
-def unitList():
+def pilotList():
     mycursor.execute("SELECT * FROM Piloti")
     myresult = mycursor.fetchall()
     return render_template('piloti.html', tabella_piloti=myresult)
+
+
+@app.route('/Cognome/<pilota>')
+def pilot(pilota):
+    mycursor.execute("SELECT * FROM Piloti where Cognome='{}'".format(pilota))
+    myresult = mycursor.fetchall()
+    return render_template('cognome.html', tabella_piloti=myresult)

@@ -2,7 +2,8 @@ body {
     background-image: url(../images/2.jpg); 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 1750px;
+    background-size: 1900px;
+    background-color: rgba(red, green, blue, 0.7);
    }
 
 .image-uno{
@@ -14,4 +15,23 @@ body {
     text-align: center;
     font-family: cursive;
     color:rgb(255, 0, 0)
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color:rgb(255, 254, 254);
+    background-color: black;
+    border-radius: 23px;
+    width: fit-content;
+    padding: 7px;
+    flex-direction: row;
+}
+
+.boiler {
+justify-content: center;
+flex-direction: row;
+display: flex;
+flex-wrap: wrap;
+
 }

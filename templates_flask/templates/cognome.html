@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+  {% for pilota in tabella_piloti  %}
+    <title>{{pilota [0]}}</title>
+    {% endfor %}
+    <link rel="stylesheet" href="../static/css/pilota.css" />
+    
+</head>
+
+<body>
+  {% for pilota in tabella_piloti  %}
+   <h3>{{pilota [0]}} {{pilota [1]}}</h3> 
+   <img src="../static/images/{{pilota [0]}}.jpg" alt="F1" width="400">
+      
+      <p>
+    Nazionalità: {{pilota [2]}}
+      </p>
+      <p>
+    Numero: {{pilota [3]}}
+      </p>
+      <p>
+    Scuderia: {{pilota [4]}}
+      </p>
+      <p>
+    Età: {{pilota [5]}}
+      </p>
+       <p>
+    Pole Position: {{pilota [6]}}
+      </p>
+      <p>
+    Podi: {{pilota [7]}}
+       </p>
+       <p>
+    Vittorie: {{pilota [8]}}
+    </p>
+    {% endfor %}  
+</body>
+</html>
