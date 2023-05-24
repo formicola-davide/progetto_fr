@@ -3,3 +3,26 @@ body{
     color: black;
     font-family:Trattatello;
 }
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color:rgb(255, 254, 254);
+    background-color: black;
+    border-radius: 23px;
+    width: fit-content;
+    padding: 7px;
+    flex-direction: row;
+}
+
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+
+
+
+

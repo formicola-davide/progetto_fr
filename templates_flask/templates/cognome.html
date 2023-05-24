@@ -9,9 +9,10 @@
     
 </head>
 
-<body>
-  {% for pilota in tabella_piloti  %}
-   <h3>{{pilota [0]}} {{pilota [1]}}</h3> 
+{% for pilota in tabella_piloti  %}
+<body style="background-color: {{pilota[9]}};">
+
+   <h1>{{pilota [0]}} {{pilota [1]}}</h1> 
    <img src="../static/images/{{pilota [0]}}.jpg" alt="F1" width="400">
       
       <p>
@@ -35,6 +36,7 @@
        <p>
     Vittorie: {{pilota [8]}}
     </p>
-    {% endfor %}  
+  
 </body>
+{% endfor %}  
 </html>
