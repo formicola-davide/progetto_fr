@@ -13,6 +13,7 @@ p {
     width: fit-content;
     padding: 7px;
     flex-direction: row;
+    text-align: center;
 }
 
 h1 {
@@ -22,6 +23,12 @@ h1 {
     color:rgb(255, 255, 255);
 }
 
+.boiler {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    }
 
 
 

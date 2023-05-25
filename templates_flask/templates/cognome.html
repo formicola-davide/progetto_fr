@@ -12,31 +12,32 @@
 {% for pilota in tabella_piloti  %}
 <body style="background-color: {{pilota[9]}};">
 
-   <h1>{{pilota [0]}} {{pilota [1]}}</h1> 
+   <h1>{{pilota [1]}} {{pilota [0]}}</h1> 
+   <section class="boiler">
    <img src="../static/images/{{pilota [0]}}.jpg" alt="F1" width="400">
       
       <p>
-    Nazionalità: {{pilota [2]}}
+        Nazionalità🌏: {{pilota [2]}}
       </p>
       <p>
-    Numero: {{pilota [3]}}
+       Numero#️⃣: {{pilota [3]}}
       </p>
       <p>
-    Scuderia: {{pilota [4]}}
+        Scuderia🏎️: {{pilota [4]}}
       </p>
       <p>
-    Età: {{pilota [5]}}
+        Età🎂: {{pilota [5]}}
       </p>
        <p>
-    Pole Position: {{pilota [6]}}
+        Pole Position 🏁: {{pilota [6]}}
       </p>
       <p>
-    Podi: {{pilota [7]}}
+        Podi 🏆: {{pilota [7]}}
        </p>
        <p>
-    Vittorie: {{pilota [8]}}
+        Vittorie🥇: {{pilota [8]}}
     </p>
-  
+   </section>
 </body>
 {% endfor %}  
 </html>
